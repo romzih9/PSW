@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PT.Pidoly Safety Work</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo"><img src="images/logo.png"></div>
+                <div class="nav-links" id="navLinks">
+                    <a href="#home">Utama</a>
+                    <a href="#course">Pelatihan</a>
+                    <a href="#about">Tentang Kami</a>
+                    <a href="#team">Instruktur</a>
+                    <a href="#gallery">Galeri</a>
+                    <a href="#contact">Kontak</a>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner Section -->
+    <section id="home" class="banner-section">
+        <div class="container">
+            <div class="banner-grid">
+                <!-- Static Text -->
+                <div class="banner-text">
+                    <h1>Pelatihan Profesional <span class="highlight">Keselamatan</span></h1>
+                    <p>PT Pidoly Safety Work hadir sebagai mitra terpercaya dalam pelatihan Keselamatan dan Kesehatan Kerja, dengan komitmen menjaga kualitas dan kepuasan setiap mitra.</p>
+                    <div class="banner-buttons">
+                        <a href="#contact"><button class="btn btn-primary">Daftar</button></a>
+                        <a href="#course"><button class="btn btn-outline">Lebih Lanjut</button></a>
+                    </div>
+                </div>
+
+                <!-- Carousel -->
+                <div class="carousel-container">
+                    <div class="carousel">
+                        <div class="carousel-slide active">
+                            <img src="images/galeri-1.jpg" alt="Safety Engineering 1">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="images/galeri-7.jpg" alt="Safety Engineering 1">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="images/galeri-4.jpg" alt="Safety Engineering 1">
+                        </div>
+                    </div>
+                    <button class="carousel-btn prev" onclick="changeSlide(-1)">&#10094;</button>
+                    <button class="carousel-btn next" onclick="changeSlide(1)">&#10095;</button>
+                    <div class="carousel-dots" id="carouselDots"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Section -->
+    <section id="course" class="course-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Pelatihan Kami</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="courses-grid">
+                <!-- Course 1 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="images/course-1.jpg">
+                    </div>
+                    <div class="course-title">
+                        <h3>Pesawat Angkat dan Pesawat Angkut</h3>
+                    </div>
+                    <p class="course-learn-more">Learn More</p>
+                    <p class="course-detail-text">
+                        Pelatihan ini membekali peserta dengan pengetahuan dan keterampilan dalam pengoperasian serta pemeriksaan pesawat angkat dan angkut secara aman dan sesuai standar K3.<br>
+                        <br> Pelatihan Termasuk:
+                        <br>1. Operator Alat Berat
+                        <br>2. Teknisi PAA
+                        <br>3. Operator Crane
+                        <br>4. Operator Forklift
+                        <br>5. Juru Ikat
+                        <br>6. Operator Gondola
+                    </p>
+                </div>
+
+                <!-- Course 2 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="images/course-2.jpg">
+                    </div>
+                    <div class="course-title">
+                        <h3>Pesawat Tenaga dan Produksi</h3>
+                    </div>
+                    <p class="course-learn-more">Learn More</p>                    
+                    <p class="course-detail-text">
+                        Program ini dirancang untuk meningkatkan kompetensi dalam pengelolaan, pengoperasian, dan pemeliharaan pesawat tenaga serta peralatan produksi dengan fokus pada keselamatan kerja.<br>
+                        <br> Pelatihan Termasuk:
+                        <br>1. Teknisi PTP
+                        <br>2. Operator Motor Diesel
+                        <br>3. Operator Turbin
+                        <br>4. Operator Tanur
+                    </p>
+                </div>
+
+                <!-- Course 3 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="images/course-3.jpg">
+                    </div>
+                    <div class="course-title">
+                        <h3>Pesawat Uap, Bejana Tekanan, dan Tangki Timbun</h3>
+                    </div>
+                    <p class="course-learn-more">Learn More</p>
+                    <p class="course-detail-text">
+                        Kursus ini mengajarkan prinsip kerja, perawatan, serta aspek keselamatan dalam penggunaan pesawat uap, bejana bertekanan, dan tangki timbun di lingkungan industri.<br>
+                        <br> Pelatihan Termasuk:
+                        <br>1. Teknisi Tanki Timbun
+                        <br>2. Teknisi Pesawat Uap
+                        <br>3. Operator Pesawat Uap
+                    </p>
+                </div>
+
+                <!-- Course 4 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="images/course-4.jpg">
+                    </div>
+                    <div class="course-title">
+                        <h3>Konstruksi Bangunan</h3>
+                    </div>
+                    <p class="course-learn-more">Learn More</p>
+                    <p class="course-detail-text">
+                        Pelatihan ini mempersiapkan tenaga kerja konstruksi agar memahami penerapan K3 di proyek pembangunan, demi terciptanya lingkungan kerja yang aman dan produktif.<br>
+                        <br> Pelatihan Termasuk:
+                        <br>1. Teknisi Perancah
+                        <br>2. Supervisi Perancah
+                        <br>3. Ahli Muda K3 Konstruksi
+                        <br>4. Ahli Madya K3 Konstruksi
+                    </p>
+                </div>
+
+                <!-- Course 5 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="images/course-5.jpg">
+                    </div>
+                    <div class="course-title">
+                        <h3>Keahlian K3 Umum</h3>
+                    </div>
+                    <p class="course-learn-more">Learn More</p>
+                    <p class="course-detail-text">
+                        Program ini memberikan dasar-dasar penting keselamatan dan kesehatan kerja bagi semua sektor industri untuk menciptakan budaya kerja yang aman dan efisien.<br>
+                    </p>
+                </div>
+
+                <!-- Course 6 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="images/course-6.jpg">
+                    </div>
+                    <div class="course-title">
+                        <h3>Penanggulangan Kebakaran</h3>
+                    </div>
+                    <p class="course-learn-more">Learn More</p>
+                    <p class="course-detail-text">
+                        Pelatihan ini membekali peserta dengan kemampuan pencegahan, penanganan awal, dan tindakan darurat dalam menghadapi kebakaran di tempat kerja.<br>
+                        <br> Pelatihan Termasuk:
+                        <br>1. Petugas Peran Kebakaran (Kelas D)
+                        <br>2. Regu Penanggulangan Kebakaran (Kelas C)
+                    </p>
+                </div>
+
+                <!-- Course 7 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="images/course-7.jpg">
+                    </div>
+                    <div class="course-title">
+                        <h3>Listrik</h3>
+                    </div>
+                    <p class="course-learn-more">Learn More</p>
+                    <p class="course-detail-text">
+                        Kursus ini menekankan pentingnya keselamatan dalam instalasi, pengoperasian, dan perawatan sistem kelistrikan sesuai dengan standar K3.<br>
+                        <br> Pelatihan Termasuk:
+                        <br>1. Teknisi Listrik
+                        <br>2. Ahli K3 Listrik
+                    </p>
+                </div>
+
+                <!-- Course 8 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="images/course-8.jpg">
+                    </div>
+                    <div class="course-title">
+                        <h3>Kesehatan Kerja</h3>
+                    </div>
+                    <p class="course-learn-more">Learn More</p>
+                    <p class="course-detail-text">
+                        Pelatihan ini fokus pada pencegahan penyakit akibat kerja dan peningkatan kesejahteraan tenaga kerja melalui penerapan prinsip kesehatan kerja yang efektif.<br>
+                        <br> Pelatihan Termasuk:
+                        <br>1. Petugas Pertolongan Pertama Pada Kecelakaan (P3K)
+                        <br>2. HIPERKES
+                    </p>
+                </div>
+
+                <!-- Course 9-->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="images/course-9.jpg">
+                    </div>
+                    <div class="course-title">
+                        <h3>Elevator dan Eskalator</h3>
+                    </div>
+                    <p class="course-learn-more">Learn More</p>
+                    <p class="course-detail-text">
+                        Program ini mengajarkan prinsip kerja, perawatan, dan pemeriksaan elevator serta eskalator dengan mengutamakan aspek keselamatan dan keandalan sistem.<br>
+                        <br> Pelatihan Termasuk:
+                        <br>1. Operator K3 Elevator & Eskalator
+                        <br>2. Teknisi K3 Elevator & Eskalator
+                    </p>
+                </div>
+
+                <!-- Course 10 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="images/course-10.jpg">
+                    </div>
+                    <div class="course-title">
+                        <h3>Lingkungan Kerja dan Bahan Berbahaya</h3>
+                    </div>
+                    <p class="course-learn-more">Learn More</p>
+                    <p class="course-detail-text">
+                        Kursus ini memberikan pemahaman tentang pengendalian faktor bahaya di lingkungan kerja serta penanganan aman terhadap bahan berbahaya dan beracun.<br>
+                        <br> Pelatihan Termasuk:
+                        <br>1. Petugas Kimia
+                        <br>2. Petugas Ruang Terbatas
+                        <br>3. Teknisi Ruang Terbatas
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <div class="course-detail-popup" id="courseDetail"></div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Tentang Kami</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="images/logo.png" alt="About Us">
+                </div>
+                <div class="about-text">
+                    <p>PT Pidoly Safety Work adalah Perusahaan jasa keselamatan dan Kesehatan kerja (K3) yang bergerak dalam pelatihan di bidang K3 yang berdiri sejak 08 Agustus 2014 yang selalu berusaha memelihara kinerja dan mutu pelayanan agar dapat memberikan kepuasan kepada semua pengguna jasa atau mitra kami dan komitmen serta berdedikasi tinggi dibidang Keselamatan dan Kesehatan Kerja.</p>
+                    <p>Dengan sumber daya manusia yang berkualitas dan telah berpengalaman di bidangnya, maka Pidoly Safety Work optimis dapat memberi kepuasaan pelayanan bagi seluruh pengguna jasa kami</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Instruktur Profesional Kami</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="team-grid">
+                <div class="team-card">
+                    <img src="images/ins-1.jpg" alt="Ir.H.Erwin Nasution,SE,MM">
+                    <h3>Ir.H.Erwin Nasution,SE,MM</h3>
+                    <p>Lihat Detil</p>
+                    <p class="team-detail-text">
+                        Bidang Pelatihan :
+                        <br>1. Pesawat Tenaga & Produksi.
+                        <br>2. Konstruksi Bangunan.
+                        <br>3. Lingkungan Kerja & Bahan Berbahaya.
+                        <br>4. Pengelasan.
+                        <br>5. SMK3.
+                        <br>6. Ahli K3 Umum.
+                        <br>7. Pesawat Uap & Bejana Tekan.
+                        <br>8. Listrik.
+                        <br>9. Pemadam Kebakaran.
+                    </p>
+                </div>
+                <div class="team-card">
+                    <img src="images/ins-2.jpg" alt="Ir.Arlan Syam">
+                    <h3>Ir.Arlan Syam</h3>
+                    <p>Lihat Detil</p>
+                    <p class="team-detail-text">
+                        Bidang Pelatihan :
+                        <br>1. Pemadam Kebakaran.
+                        <br>2. Ahli K3 Umum.
+                    </p>
+                </div>
+                <div class="team-card">
+                    <img src="images/ins-3.jpg" alt="Rahmatullah,ST,MSc.">
+                    <h3>Rahmatullah,ST,MSc.</h3>
+                    <p>Lihat Detil</p>
+                    <p class="team-detail-text">
+                        Bidang Pelatihan :
+                        <br>1. Pesawat Angkat & Pesawat Angkut.
+                        <br>2. Pengelasan.
+                        <br>3. Bekerja di Ketinggian.
+                    </p>
+                </div>
+                <div class="team-card">
+                    <img src="images/ins-4.jpg" alt="Ir.H.Sunardi">
+                    <h3>Ir.H.Sunardi</h3>
+                    <p>Lihat Detil</p>
+                    <p class="team-detail-text">
+                        Bidang Pelatihan :
+                        <br>1. Pesawat Uap & Bejana Tekan.
+                        <br>2. Listrik.
+                        <br>3. Elevator & Escalator.
+                        <br>4. Ahli K3 Umum.
+                    </p>
+                </div>
+                <div class="team-card">
+                    <img src="images/ins-5.jpg" alt="dr.Winny Windiany Nasution,MMRS.">
+                    <h3>dr.Winny Windiany Nasution,MMRS.</h3>
+                    <p>Lihat Detil</p>
+                    <p class="team-detail-text">
+                        Bidang Pelatihan :
+                        <br>1.Kesehatan Kerja.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="team-detail-popup" id="teamDetail"></div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Galeri</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="gallery-carousel-container">
+                <div class="gallery-carousel">
+                    <div class="gallery-slide active">
+                        <img src="images/galeri-1.jpg" alt="Gallery 1">
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="images/galeri-2.jpg" alt="Gallery 2">
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="images/galeri-3.jpg" alt="Gallery 3">
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="images/galeri-4.jpg" alt="Gallery 4">
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="images/galeri-5.jpg" alt="Gallery 5">
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="images/galeri-6.jpg" alt="Gallery 6">
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="images/galeri-7.jpg" alt="Gallery 7">
+                    </div>
+                </div>
+                <button class="gallery-btn prev" onclick="changeGallerySlide(-1)">&#10094;</button>
+                <button class="gallery-btn next" onclick="changeGallerySlide(1)">&#10095;</button>
+                <div class="gallery-dots" id="galleryDots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Hubungi Kami</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div>
+                            <h3>Alamat Kantor</h3>
+                            <p>Jl. Bangau, Komplek The Raztan Palace, Blok A No. 45-46 Kecamatan Medan Sunggal, Kota Medan-Sumatera Utara 20122</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div>
+                            <h3>Kantor Perwakilan (Jabodetabek)</h3>
+                            <p>Jl. Raya Cileungsi-Jonggol Km 3, Komp Harvest City, Cluster Oleander Blok OJ 12 No 8, Kabupaten Bekasi, Jawa Barat</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div>
+                            <h3>Telepon</h3>
+                            <p>(+62) 812-6573-475</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div>
+                            <h3>Email</h3>
+                            <p>pidoli846@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <h3>Follow Us</h3>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon">f</a>
+                            <a href="#" class="social-icon">X</a>
+                            <a href="#" class="social-icon">in</i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15927.988614042333!2d98.61735081132467!3d3.5881270765728503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30312e4e51581e3b%3A0xece6d636d4ebe798!2sThe%20Raztan%20Palace!5e0!3m2!1sen!2sid!4v1761236809537!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Pidoly Safety Work. All rights reserved.</p>
+        </div>
+    </footer>
+    <a href="https://wa.me/628126573475?text=Halo!%20PSW!" 
+    class="whatsapp-float" 
+    target="_blank" 
+    rel="noopener">
+        <img src="images/whatsapp.png" alt="Chat on WhatsApp">
+    </a>
+    <script src="script.js"></script>
+</body>
+</html>
