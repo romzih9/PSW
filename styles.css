@@ -794,6 +794,7 @@ body {
     }
 
     .team-card{
+        height: 270px;
         padding: 20px;
     }
 
